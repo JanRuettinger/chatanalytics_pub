@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block page_content %}
+
+    <div class="index-container">
+      <h1>Whatsapp group chat analyser</h1><hr>
+      <ol>
+        <li>At which time is the group most active?</li>
+        <li>In which month is the group most active?</li>
+        <li>Ranking: Who contributes the most messages?</li>
+        <li>Ranking: Who posts the most pictures?</li>
+      </ol>
+
+      <div class="bt-analyse"><a href="{{url_for('main.instructions')}}" class="button">Anaylse your chat now</a>
+    </div>
+    </div>
+{% endblock %}
+
+

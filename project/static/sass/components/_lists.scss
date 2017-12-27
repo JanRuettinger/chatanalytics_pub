@@ -1,0 +1,34 @@
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+li {
+   counter-increment: item;
+   margin-bottom: 5px;
+ }
+li:before {
+   margin-right: 10px;
+   content: counter(item);
+   background: lightblue;
+   border-radius: 100%;
+   color: white;
+   width: 1.2em;
+   text-align: center;
+   display: inline-block;
+ }

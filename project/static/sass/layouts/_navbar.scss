@@ -1,0 +1,67 @@
+nav {
+  @include grid-container;
+  background: $navbar-background-color;
+  padding-top: 10px;
+}
+
+.nav-logo{
+
+  font-family: $logo-font;
+
+  @include grid-media($media-md) {
+    font-size: 45px;
+    font-weight: 300;
+    @include grid-column(6);
+  }
+
+  @include grid-media($media-sm-max) {
+    font-size: 40px;
+    font-weight: 300;
+    @include grid-column(12);
+    text-align: center;
+  }
+
+  a, a:visited, a:link, a:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.nav-links {
+
+  @include grid-media($media-md) {
+    @include grid-column(5);
+    @include grid-push(1);
+  }
+
+  @include grid-media($media-sm-max) {
+      display: none;
+  }
+
+  .nav-link {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: solid #000;
+    font-size: 22px;
+
+    @include grid-media($media-md-max) {
+      font-size: 22px;
+    }
+
+
+
+    a, a:visited, a:link {
+    text-decoration: none;
+    color: white;
+    }
+
+    a:hover {
+      color: blue;
+    }
+  }
+
+  .nav-link:last-child {
+    border: none;
+  }
+
+}
